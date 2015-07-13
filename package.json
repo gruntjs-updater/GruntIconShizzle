@@ -1,0 +1,41 @@
+{
+  "name": "grunt-iconshizzle",
+  "description": "Grunt task using IconShizzle to create an SVG SASS file, with a fallback to PNG sprites of different sizes.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/dapenguin/GruntIconShizzle",
+  "author": {
+    "name": "Anthony Jeffery",
+    "email": "anthony.jeffery@littleblueweb.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dapenguin/GruntIconShizzle.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dapenguin/GruntIconShizzle/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/dapenguin/GruntIconShizzle/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "^0.9.2",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-nodeunit": "^0.3.3",
+    "grunt": "~0.4.5"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.5"
+  },
+  "keywords": [
+    "gruntplugin"
+  ]
+}
