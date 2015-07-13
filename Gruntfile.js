@@ -1,6 +1,6 @@
 /*
  * grunt-iconshizzle
- * https://github.com/dapenguin/gruntIconShizzle
+ * https://github.com/dapenguin/GruntIconShizzle
  *
  * Copyright (c) 2015 Anthony Jeffery
  * Licensed under the MIT license.
@@ -32,18 +32,12 @@ module.exports = function(grunt) {
     iconshizzle: {
       default_options: {
         options: {
+          svgLocation: 'example/svg',
+          actualSassFile: 'example/output/result.css',
+          sassOptions: {}
         },
         files: {
-          'tmp/default_options': ['test/fixtures/testing', 'test/fixtures/123']
-        }
-      },
-      custom_options: {
-        options: {
-          separator: ': ',
-          punctuation: ' !!!'
-        },
-        files: {
-          'tmp/custom_options': ['test/fixtures/testing', 'test/fixtures/123']
+          //'tmp/default_options': ['test/fixtures/testing', 'test/fixtures/123']
         }
       }
     },

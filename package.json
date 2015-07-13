@@ -37,5 +37,8 @@
   },
   "keywords": [
     "gruntplugin"
-  ]
+  ],
+  "dependencies": {
+    "iconshizzle": "git+https://git@github.com/dapenguin/IconShizzle.git"
+  }
 }
