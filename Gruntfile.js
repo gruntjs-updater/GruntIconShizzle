@@ -28,16 +28,36 @@ module.exports = function(grunt) {
       tests: ['tmp']
     },
 
-    // Configuration to bet run (and then tested).
+    // Configuration to be run (and then tested).
     iconshizzle: {
-      default_options: {
+      test: {
         options: {
-          svgLocation: 'example/svg',
           actualSassFile: 'example/output/result.css',
-          sassOptions: {}
+          svgCssOptions: {
+            prefix: ".icon-", // used to prefix the name of the file for the CSS classname, .icon- is the default
+            templatePrepend: "/* Start of SVG icons */\n", // this string is prepended to the destinationCSSFile, defaults to ""
+            template: 'example/input/templates/default-css.hbs', //template in handlebars, FANCY!
+            templateAppend: "/* End of SVG icons */" // this string is appended to the destinationCSSFile, defaults to ""
+          },
+          pngFileOptions: {
+            outputFolder: 'example/output/',
+            compress: false,
+            optimizationLevel: 3,
+            dimensions: [
+              {
+                width: "400px",
+                height: "300px"
+              },
+              {
+                width: "40px",
+                height: "40px"
+              }
+            ]
+          },
+          pngSpriteOptions: {}
         },
         files: {
-          //'tmp/default_options': ['test/fixtures/testing', 'test/fixtures/123']
+          'tmp/default_options': ['example/input/svg/**/*.svg']
         }
       }
     },
