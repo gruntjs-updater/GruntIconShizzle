@@ -54,7 +54,10 @@ module.exports = function(grunt) {
               }
             ]
           },
-          pngSpriteOptions: {}
+          pngSpriteOptions: {
+            template: 'example/input/templates/pngIconMixin.hbs',
+            spriteCssFile: 'example/output/pngSprite.scss'
+          }
         },
         files: {
           'tmp/default_options': ['example/input/svg/**/*.svg']

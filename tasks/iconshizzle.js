@@ -32,7 +32,10 @@ module.exports = function(grunt) {
           }
         ]
       },
-      pngSpriteOptions: {},
+      pngSpriteOptions: {
+        template: 'lib/pngIconMixin.hbs',
+        spriteCssFile: 'example/output/pngSprite.css'
+      },
       tmpPath: os.tmpDir(),
       tmpDir: "grunt-iconshizzle-tmp"
     });
