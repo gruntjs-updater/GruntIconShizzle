@@ -48,9 +48,12 @@ module.exports = function(grunt) {
 
     // Set the paths in our options to full paths
     var tmpFullPath = path.join(options.tmpPath,options.tmpDir);
-    var sassFileFullPath = path.resolve(options.actualSassFile);
-    options.svgCssOptions.template = path.resolve(options.svgCssOptions.template);
-    options.pngFileOptions.outputFolder = path.resolve(options.pngFileOptions.outputFolder);
+    if (options.svgCssOptions.template){
+      options.svgCssOptions.template = path.resolve(options.svgCssOptions.template);
+    }
+    if (options.pngFileOptions.outputFolder){
+      options.pngFileOptions.outputFolder = path.resolve(options.pngFileOptions.outputFolder);
+    }
 
     // Remove temp directory if it exists
     if (fs.existsSync(tmpFullPath)){
