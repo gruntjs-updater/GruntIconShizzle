@@ -1,7 +1,7 @@
 {
   "name": "grunt-iconshizzle",
   "description": "Grunt task using IconShizzle to create an SVG SASS file, with a fallback to PNG sprites of different sizes.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/dapenguin/GruntIconShizzle",
   "author": {
     "name": "Anthony Jeffery",
