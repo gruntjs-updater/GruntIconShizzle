@@ -40,6 +40,6 @@
   ],
   "dependencies": {
     "fs-extra": "^0.22.1",
-    "iconshizzle": "git+https://git@github.com/dapenguin/IconShizzle.git"
+    "iconshizzle": "*"
   }
 }
