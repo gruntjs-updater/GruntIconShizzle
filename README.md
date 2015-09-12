@@ -2,6 +2,8 @@
 
 > Plugin for creating an SVG SASS file, with a fallback to PNG sprites of different sizes.
 
+[![npm version](https://badge.fury.io/js/grunt-iconshizzle.svg)](http://badge.fury.io/js/grunt-iconshizzle)
+
 ## Getting Started
 This plugin requires Grunt `~0.4.5`
 
